@@ -26,7 +26,7 @@ body{
     font-size:70%;
     font-family:Courier;
     line-height:1.4;
-    padding:100px;
+    padding:10px;
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     -webkit-animation: gradient 15s ease infinite;
@@ -36,12 +36,12 @@ body{
     display: grid;
     align-items: top;
     justify-content: center;
-    height: 100vh;
+    height: 70vh;
 }
 
 .container {
-  width: 60rem;
-  height: 3.5rem;
+  width: 40rem;
+  height: 10rem;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
   border-radius: 5px;
   position: relative;
@@ -68,13 +68,31 @@ body{
     width:760px;
     background:#fff;
     margin:30px auto;
-    padding:30px}
+    padding:10px}
 
 p{
-    font-size:1.5em;
-    margin:30px 0
-}
-h1{
     color: white;
-    text-align: center;
+    font-weight: bold;
+    font-size: 2em;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.title {
+  position: relative;
+  font-family: 'Permanent Marker', cursive;
+  font-variant:small-caps;
+  font-size: 70px;
+  -webkit-transform: skew(-15deg,-15deg);
+  padding-left: 0px;
+  background-image: -webkit-linear-gradient(yellow 0%, yellow 100%); /*#FC96FC*/
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  -webkit-filter: drop-shadow(2px 2px 30px yellow);
+}
+
+.title h1:hover{
+    color:red;
+    transition: all 0.3s ease;
 }
